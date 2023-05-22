@@ -6,5 +6,5 @@ const app = new App({
 		name: 'world'
 	}
 });
-console.log(ggwp);
+
 export default app;
