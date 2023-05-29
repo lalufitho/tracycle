@@ -65,37 +65,3 @@ button:not(:disabled):active {
 button:focus {
   border-color: #666;
 }
-.jumbotron {
-  background-color: #4c7031;
-  height: 500px;
-  display: flexbox;
-}
-
-.jumbotron_container {
-  justify-content: left;
-  padding: 80px;
-  padding-top: 5px;
-}
-.jumbotron_container .display-4 {
-  font-family: 'Ubuntu';
-  color: #ffffff;
-  padding-top: 70px;
-  width: 50%;
-  font-weight: bold;
-}
-.jumbotron_container .lead {
-  padding-top: 40px;
-  padding-bottom: 30px;
-  font-family: 'Ubuntu';
-  color: #ffffff;
-  width: 50%;
-  font-size: 14px;
-}
-
-/* button */
-.btn btn-lg {
-  background-color: gray;
-}
-
-.rounded float-end {
-}

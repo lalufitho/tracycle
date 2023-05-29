@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+/** SKIP LINK */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: white;
+  color: whitesmoke;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/** MAIN  */
+
+main {
+  width: 100%;
+  min-height: 90vh;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+/** CONTENT */
+
+section {
+  margin-bottom: 40px;
+}
+/** HEADER */
+
+.header {
+  color: #fff;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding: 20px 30px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  position: fixed;
+  height: 85px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 30px;
+  color: #4c7031;
+  font-family: 'Pacifico', cursive;
+  text-align: right;
+  display: inline-block;
+  width: max-content;
+}
+.header__image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  height: 70px;
+}
+
+.header__menu,
+.close__menu {
+  display: none;
+  border: 0;
+  background-color: transparent;
+  font-size: 24px;
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.close__menu {
+  font-size: 44px;
+}
+
+/** NAV  */
+
+#nav {
+  font-size: 20px;
+}
+
+.nav a {
+  color: #395220;
+  transition: ease 0.5s;
+  padding: 15px;
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  display: inline-block;
+}
+nav ul li a:hover {
+  color: #ffffff;
+  transition: 0.5s;
+  background-color: #395220;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  font-weight: 600;
+}
+
+.nav__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav__list li {
+  margin-left: 18px;
+}
+
+/** banner */
+
+.container {
+  background-color: #4c7031;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: left;
+  padding: 80px;
+  padding-top: 10px;
+  align-items: center;
+}
+
+.hero_title {
+  padding-top: -30px;
+  width: 661px;
+  height: 165px;
+  left: 100px;
+  top: 166px;
+
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 55px;
+
+  color: #ffffff;
+}
+
+.hero_title > h1 {
+  margin: 0;
+}
+
+.hero_subtitle {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  width: 661px;
+  height: 54px;
+  left: 100px;
+  top: 355px;
+
+  /* Text/Body */
+
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+}
+.exchange_button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.exchange_button:hover {
+  background-color: #395220;
+  color: #ffffff;
+}
+
+/* content */
+.image_hero {
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: 0;
+  display: block; /* Membuat gambar menjadi elemen blok */
+}
+
+.deskripsi_container {
+  background-color: #4c7031;
+  border-radius: 10px;
+  height: 300px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.nama {
+  position: relative;
+  padding: 20px;
+  border-bottom: none;
+  font-family: 'Ubuntu';
+}
+
+.nama::after {
+  content: '';
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15%;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.deskripsi_paragraf {
+  font-size: 18px;
+  font-family: 'Ubuntu';
+}
+
+.layanan_title {
+  position: relative;
+  padding-top: 50px;
+  font-family: 'Ubuntu';
+  font-style: normal;
+  text-align: center;
+}
+
+.layanan_title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 4px;
+  background-color: #000000;
+}
+
+.sub_layanan {
+  display: grid;
+  justify-content: center; /* Mengatur konten horizontal menjadi di tengah */
+
+  width: 100%;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  height: 250px;
+  gap: 50px;
+  padding-right: 50px;
+  margin-right: 50px;
+  margin-bottom: 100px;
+}
+
+.sub_layanan .image_layanan1 {
+  border-radius: 5px;
+  padding-right: 50px;
+}
+
+.layanan1 {
+  align-items: center;
+}
+
+.layanan_title1 {
+  font-size: 10px;
+  font-family: 'Ubuntu';
+  text-align: center;
+  color: #395220;
+}
+.layanan_title2 {
+  font-size: 10px;
+  font-family: 'Ubuntu';
+  text-align: center;
+  color: #395220;
+}
+.layanan_title3 {
+  font-size: 10px;
+  font-family: 'Ubuntu';
+  text-align: center;
+  color: #395220;
+}
+
+.deskripsi_layanan1 {
+  width: 326px;
+  height: 96px;
+  left: 37px;
+  top: 205px;
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+.deskripsi_layanan2 {
+  width: 326px;
+  height: 96px;
+  left: 37px;
+  top: 205px;
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+.deskripsi_layanan3 {
+  width: 326px;
+  height: 96px;
+  left: 37px;
+  top: 205px;
+  text-align: center;
+  font-family: 'Ubuntu';
+}
+
+/* footer */
+
+footer {
+  background-color: #246b10;
+  color: white;
+  font-size: 16px;
+  padding: 2em;
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #fdd017;
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  width: 100px;
+  height: auto;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
