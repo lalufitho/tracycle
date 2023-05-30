@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
@@ -12,30 +11,12 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
-}
-/** SKIP LINK */
-
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background-color: white;
-  color: whitesmoke;
-  padding: 8px;
-  z-index: 100;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bolder;
-}
-
-.skip-link:focus {
-  top: 0;
 }
 
 /** MAIN  */
@@ -44,14 +25,8 @@ main {
   width: 100%;
   min-height: 90vh;
   margin: 0 auto;
-  padding: 30px;
 }
 
-/** CONTENT */
-
-section {
-  margin-bottom: 40px;
-}
 /** HEADER */
 
 .header {
@@ -113,8 +88,8 @@ section {
   border-style: none;
 }
 
-#nav {
-  font-size: 20px;
+.nav{
+  width: 100%;
 }
 
 .nav a {
@@ -122,8 +97,6 @@ section {
   transition: ease 0.5s;
   padding: 15px;
   font-size: 15px;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
   display: inline-block;
 }
 nav ul li a:hover {
@@ -149,23 +122,15 @@ nav ul li a:hover {
 .container {
   background-color: #4c7031;
   background-size: cover;
-  background-position: center;
-  height: 600px;
+  width: 100%;
   display: flex;
-  justify-content: left;
-  padding: 80px;
-  padding-top: 10px;
-  align-items: center;
+  margin-bottom: 50px;
+  padding: 100px;
 }
 
 .hero_title {
   padding-top: -30px;
   width: 661px;
-  height: 165px;
-  left: 100px;
-  top: 166px;
-
-  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -183,12 +148,6 @@ nav ul li a:hover {
   padding-bottom: 80px;
   width: 661px;
   height: 54px;
-  left: 100px;
-  top: 355px;
-
-  /* Text/Body */
-
-  font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -221,28 +180,27 @@ nav ul li a:hover {
 
 /* content */
 .image_hero {
-  margin-top: 130px;
   margin-left: auto;
-  margin-right: 0;
+  height: 350px;
   display: block; /* Membuat gambar menjadi elemen blok */
 }
 
 .deskripsi_container {
   background-color: #4c7031;
   border-radius: 10px;
-  height: 300px;
   text-align: center;
   color: #ffffff;
   padding-top: 10px;
   padding-left: 100px;
   padding-right: 100px;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .nama {
   position: relative;
   padding: 20px;
   border-bottom: none;
-  font-family: 'Ubuntu';
 }
 
 .nama::after {
@@ -258,14 +216,17 @@ nav ul li a:hover {
 
 .deskripsi_paragraf {
   font-size: 18px;
-  font-family: 'Ubuntu';
+}
+
+.layanan_container{
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .layanan_title {
   position: relative;
   padding-top: 50px;
-  font-family: 'Ubuntu';
-  font-style: normal;
   text-align: center;
 }
 
@@ -281,75 +242,40 @@ nav ul li a:hover {
 }
 
 .sub_layanan {
-  display: grid;
-  justify-content: center; /* Mengatur konten horizontal menjadi di tengah */
-
+  justify-content: center; 
   width: 100%;
-  grid-template-columns: auto auto auto;
+  max-width: 1440px;
   padding: 10px;
   height: 250px;
   gap: 50px;
   padding-right: 50px;
   margin-right: 50px;
   margin-bottom: 100px;
+  margin: auto;
 }
 
-.sub_layanan .image_layanan1 {
+.sub_layanan .image_layanan {
   border-radius: 5px;
   padding-right: 50px;
 }
 
-.layanan1 {
+.layanan {
   align-items: center;
 }
 
-.layanan_title1 {
+.layanan_title {
   font-size: 10px;
-  font-family: 'Ubuntu';
-  text-align: center;
-  color: #395220;
-}
-.layanan_title2 {
-  font-size: 10px;
-  font-family: 'Ubuntu';
-  text-align: center;
-  color: #395220;
-}
-.layanan_title3 {
-  font-size: 10px;
-  font-family: 'Ubuntu';
   text-align: center;
   color: #395220;
 }
 
-.deskripsi_layanan1 {
-  width: 326px;
-  height: 96px;
-  left: 37px;
-  top: 205px;
+.deskripsi_layanan {
   text-align: center;
-  font-family: 'Ubuntu';
 }
-.deskripsi_layanan2 {
-  width: 326px;
-  height: 96px;
-  left: 37px;
-  top: 205px;
-  text-align: center;
-  font-family: 'Ubuntu';
-}
-.deskripsi_layanan3 {
-  width: 326px;
-  height: 96px;
-  left: 37px;
-  top: 205px;
-  text-align: center;
-  font-family: 'Ubuntu';
-}
+
 
 /* footer */
 
-/* CSS untuk footer */
 footer {
   background-color: #4c7031;
   color: #fff;
@@ -358,7 +284,6 @@ footer {
 }
 
 .container_footer {
-  max-width: 1200px;
   margin: 100px auto 0;
   padding: 0 20px;
   height: au;
@@ -451,6 +376,25 @@ footer-links ul li a:hover {
 .footer-links,
 .social-icon {
   flex-basis: 50%;
+}
+
+/** SKIP LINK */
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: white;
+  color: whitesmoke;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 @media (max-width: 768px) {
