@@ -28,6 +28,7 @@
 @media screen and (min-width: 600px) {
 	.hamburger {
 	  display: none;
+	  align-items: center;
 	}
   }
 
