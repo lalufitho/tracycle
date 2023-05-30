@@ -357,15 +357,22 @@ footer {
   align-items: center;
 }
 
-.logo_footer img {
+.identitas_footer .logo_footer {
+  align-items: left;
+  margin-right: 500px;
+}
+
+.logo_footer {
   height: 80px;
-  width: 100%;
+  align-items: left;
+
+  left: 98px;
 }
 .deskripsi_footer {
   text-align: left;
   width: 40%;
   height: 54px;
-  left: 98px;
+  left: 150px;
   top: 2640px;
 }
 
