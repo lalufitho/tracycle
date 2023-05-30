@@ -100,6 +100,19 @@ section {
 
 /** NAV  */
 
+.hamburger {
+  background-color: #393646;
+  color: white;
+  font-size: 49px;
+  display: block;
+  font-style: bold;
+  font-weight: 900;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+}
+
 #nav {
   font-size: 20px;
 }
@@ -357,22 +370,15 @@ footer {
   align-items: center;
 }
 
-.identitas_footer .logo_footer {
-  align-items: left;
-  margin-right: 500px;
-}
-
-.logo_footer {
+.logo_footer img {
   height: 80px;
-  align-items: left;
-
-  left: 98px;
+  width: 100%;
 }
 .deskripsi_footer {
   text-align: left;
   width: 40%;
   height: 54px;
-  left: 150px;
+  left: 98px;
   top: 2640px;
 }
 

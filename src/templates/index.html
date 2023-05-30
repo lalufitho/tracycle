@@ -7,15 +7,34 @@
     <meta name="description" content="Sebuah website yang membantu dalam manemukan tempat makan favoritmu" />
     <link rel="manifest" href="./app.webmanifest" crossorigin="use-credentials" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
     <link rel="icon" href="./icon.png" />
-    <title>Hungry.Q</title>
+    <title>Tracycle</title>
   </head>
 
   <body>
-    <a href="#main" class="skip-link">Skip to Content</a>
+    <a href="#maincontent" class="skip-link">Skip to Content</a>
+    <header>
+      <button id="menu" aria-label="button to open side menu" class="hamburger">☰</button>
+    </header>
+    <nav id="drawer" class="nav">
+      <ul class="nav__list">
+        <li>
+          <a href="#"><img src="./icons/logo.png" alt="Tracycle Image" class="header__image" /></a>
+        </li>
+        <li class="nav__item"><a href="#">Beranda</a></li>
+        <li class="nav__item"><a href="#/favorites">Bank Sampah</a></li>
+        <li class="nav__item"><a href="#/favorites">Daur Ulang</a></li>
+        <li class="nav__item"><a href="https://instagram.com/dnaprmdi?igshid=ZDdkNTZiNTM=" target="__blank">Tentang</a></li>
+        <li class="nav__item"><a href="#/favorites">Kontak</a></li>
+      </ul>
+    </nav>
 
-    <header class="header">
+    <!--<header class="header">
       <div class="header__drawer">
         <img src="./icons/logo.png" alt="Tracycle Image" class="header__image" />
       </div>
@@ -32,14 +51,14 @@
           <li class="nav__item"><a href="#/favorites">Kontak</a></li>
         </ul>
       </nav>
-    </header>
+    </header>-->
     <!-- Jumbotron -->
     <div class="container">
       <div class="hero_title">
         <h1>Bantu Pulihkan Bumi dengan Mengelola Sampah bersama Tracycle</h1>
         <div class="hero_subtitle">
-          Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami siap memberikan
-          dukungan dalam pengelolaan sampah di sekitarmu!
+          Mari bergabunglah bersama kami dalam upaya mengelola sampah. Jadikan lingkunganmu nyaman dan bebas dari sampah. Kami
+          siap memberikan dukungan dalam pengelolaan sampah di sekitarmu!
         </div>
         <button class="exchange_button">Tukarkan Sampah</button>
       </div>
@@ -55,10 +74,10 @@
         </div>
         <div class="deskripsi_paragraf">
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum."
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
           </p>
         </div>
       </div>
@@ -75,7 +94,10 @@
               <h1>Bank Sampah</h1>
             </div>
             <div class="deskripsi_layanan3">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas at? Nulla quis consectetur eveniet architecto</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas at? Nulla quis consectetur eveniet
+                architecto
+              </p>
             </div>
           </div>
           <div class="=layanan2">
@@ -86,7 +108,10 @@
               <h1>Bank Sampah</h1>
             </div>
             <div class="deskripsi_layanan3">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas at? Nulla quis consectetur eveniet architecto</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas at? Nulla quis consectetur eveniet
+                architecto
+              </p>
             </div>
           </div>
           <div class="=layanan3">
@@ -97,7 +122,10 @@
               <h1>Bank Sampah</h1>
             </div>
             <div class="deskripsi_layanan3">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas at? Nulla quis consectetur eveniet architecto</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, voluptas at? Nulla quis consectetur eveniet
+                architecto
+              </p>
             </div>
           </div>
         </div>
@@ -113,7 +141,10 @@
           <div class="identitas_footer">
             <img class="logo_footer" src="./icons/logo_white.png" alt="Logo Tracycle" />
             <div class="deskripsi_footer">
-              <p>TRACYCLE adalah platform inovatif yang memfasilitasi pengelolaan sampah secara praktis dan efisien melalui transaksi digital.</p>
+              <p>
+                TRACYCLE adalah platform inovatif yang memfasilitasi pengelolaan sampah secara praktis dan efisien melalui
+                transaksi digital.
+              </p>
             </div>
           </div>
           <div class="footer-links">

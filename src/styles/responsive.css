@@ -1,50 +1,27 @@
-@media screen and (max-width: 599px) {
-  .header__menu,
-  .close__menu {
-    display: block;
-    color: #fff;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 !important;
-  }
-
-  .close__element {
-    display: flex;
-    font-weight: 600;
-    justify-content: flex-end;
-  }
-
-  #nav {
-    padding: 20px;
-    z-index: 99;
-    background: #000000;
-    font-size: 28px;
-    top: 0;
+@media screen and (max-width: 499px) {
+  nav {
+    z-index: 10;
+    background-color: #ffffff;
+    width: 100%;
     position: absolute;
-    height: 40vh;
-    width: auto;
-    left: -100%;
-    top: 80%;
-    transition: left 0.3s ease-in-out;
-    text-decoration: underline;
+    /* This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-1000px, 0);
+    transform: translate(-1000px, 0);
+    /* Optionally, we animate the drawer. */
+    transition: transform 0.5s ease;
   }
-
-  #nav.open {
-    left: 0;
+  .open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
-
-  .nav__list {
+  .nav__item {
     display: list-item;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
   }
-
-  .nav__list li {
-    margin-bottom: 28px;
-  }
-
-  .nav a {
-    padding: 13px 5px;
-    display: inline-block;
+  .list-item__description {
+    font-size: 16px;
   }
 }
 
@@ -67,6 +44,10 @@
 
   .restoran-item__name {
     font-size: 22px;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
 
